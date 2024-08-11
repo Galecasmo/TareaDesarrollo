@@ -2,7 +2,7 @@ package example.myapp
 
 import java.lang.Math.PI
 
-// Paso 1: Hacer la clase Acuario abierta
+
 open class Acuario(
     open var largo: Int = 100,
     open var ancho: Int = 20,
@@ -27,7 +27,7 @@ open class Acuario(
     }
 }
 
-// Paso 2: Crear una subclase
+
 class TorreAcuario(override var altura: Int, var diámetro: Int) : Acuario(
     largo = diámetro, ancho = diámetro, altura = altura
 ) {
@@ -75,7 +75,7 @@ class PecesColor(color: String) : ColorPeces {
     override val color = color
 }
 
-// Clase sellada
+
 sealed class Foca
 class LeónMarino : Foca()
 class Morsa : Foca()
